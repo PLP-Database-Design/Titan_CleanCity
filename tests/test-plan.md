@@ -54,3 +54,33 @@ To validate the core functionalities and intentional flaws of the CleanCity web 
 - **Testing Framework:** React Testing Library
 
 ---
+## 6. Risks
+
+| Risk | Mitigation |
+|------|------------|
+
+---
+
+## 7. Deliverables
+
+- Bug report document (Week 2+)
+- Test coverage report (automated)
+- Updated test plan as app evolves
+
+---
+
+## 8. Team Responsibility
+
+| Name | Role |
+|------|------|
+| David | Manual Testing |
+| Anne | Automated Testing |
+| Samukelisiwe | Accessibility and Regression Testing |
+
+---
+
+## 9. References
+
+- Project Documentation
+- Intentional Bugs List
+- React Testing Library Docs
