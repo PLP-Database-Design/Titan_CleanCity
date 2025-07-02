@@ -32,11 +32,6 @@ To validate the core functionalities and intentional flaws of the CleanCity web 
   - Mock and verify localStorage data persistence
   - Perform regression tests after updates
 
-### Regression Testing:
-- Run previously passing tests after new code is introduced
-- Focus on Admin panel, Dashboard, and Pickup Form
-- Validate persistence and UI behavior post-update
-
 ### Accessibility Testing:
 - Use Lighthouse or screen readers to:
   - Detect missing `alt` attributes on images
