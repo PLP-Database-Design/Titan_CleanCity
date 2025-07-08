@@ -73,8 +73,8 @@ To validate the core functionalities and intentional flaws of the CleanCity web 
 
 | Name | Role |
 |------|------|
-| David | Manual Testing |
-| Anne | Automated Testing |
+| Anne | Manual Testing |
+| David | Automated Testing |
 | Samukelisiwe | Accessibility and Regression Testing |
 
 ---
