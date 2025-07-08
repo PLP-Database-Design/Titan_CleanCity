@@ -23,7 +23,6 @@ Actual Result:
 
 Status: Fail
 
-Defect ID: Defect 001
 
 ## ✅ TC002 - Admin Edits Request Status
 Objective: Admin can change request status
@@ -44,6 +43,5 @@ Actual Result: ❌ Two messages appear: success + error alert- "Please select bo
 
 Status: Fail
 
-Defect ID: Defect 002
 
 
