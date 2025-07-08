@@ -7,13 +7,13 @@ Precondition: User has successfully registered or logged in.
 
 Steps:
 
-Register or log in with any valid credentials.
+- Register or log in with any valid credentials.
 
-Open the browser’s Developer Tools.
+- Open the browser’s Developer Tools.
 
-Navigate to Application → Local Storage → cleancity_users.
+- Navigate to Application → Local Storage → cleancity_users.
 
-Inspect the saved user data.
+- Inspect the saved user data.
 
 Expected Result:
 Passwords should be hashed or obfuscated — not human-readable.
@@ -29,13 +29,13 @@ Objective: Admin can change request status
 
 Steps:
 
-Log in as admin
+- Log in as admin
 
-Click Edit on a request row
+- Click Edit on a request row
 
-Select a new status
+- Select a new status
 
-Click Update
+- Click Update
 
 Expected Result: One message should be displayed indicating a successful entry — "Request status updated successfully!"
 
