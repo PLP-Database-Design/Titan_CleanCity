@@ -38,7 +38,7 @@ Select a new status
 
 Click Update
 
-Expected Result: One message should be displayed indicating a successful entry — "Request status updated successfully!"\n
+Expected Result: One message should be displayed indicating a successful entry — "Request status updated successfully!"
 
 Actual Result: ❌ Two messages appear: success + error alert- "Please select both a request and a new status" (bug)
 
