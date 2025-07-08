@@ -1,6 +1,6 @@
 # 📋 Manual Test Case Suite for CleanCity Waste Pickup Scheduler
 
-## ✅ Test Case: TC01 - Password Should Not Be Stored in Plaintext.
+## ✅TC01 - Password Should Not Be Stored in Plaintext.
 Objective: Ensure that user passwords are stored securely (not visible in plain text).
 
 Precondition: User has successfully registered or logged in.
