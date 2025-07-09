@@ -5,11 +5,14 @@
 
 | Test ID | Test Case                      | Steps                                 | Expected Result                             | Actual Result | Status |
 | ------- | ------------------------------ | ------------------------------------- | ------------------------------------------- | ------------- | ------ |
-| TC-001  | Register a new user            | Fill name, email, password on /signup | Redirect to dashboard, show welcome message | Not redirected to dashboard              |  Failed      |
-| TC-002  | Prevent duplicate registration | Register with same email              | Show "Email already exists" error           | "Email already exists" error              | Passed       |
-| TC-003  | Login with correct credentials | Fill email & password on /login       | Redirect to dashboard                       |  Redirected to dashboard             | Passed       |
-| TC-004  | Reject invalid login           | Use wrong credentials                 | Show "Invalid credentials" error            |  Invalid  login rejected             | Passed       |
-| TC-005  | Logout                         | Click logout                          | Redirect to login page                      |  Redirected to login page             | Passed       |
+| Test ID | Test Case                      | Steps                                   | Expected Result                             | Actual Result                        | Status |
+| ------- | ------------------------------ | --------------------------------------- | ------------------------------------------- | ------------------------------------ | ------ |
+| TC-001  | Register a new user            | Fill name, email, password on /signup   | Redirect to dashboard, show welcome message | ❌ Not redirected to dashboard        | Failed |
+| TC-002  | Prevent duplicate registration | Register with same email                | Show "Email already exists" error           | ✅ "Email already exists" error shown | Passed |
+| TC-003  | Login with correct credentials | Fill email & password on /login         | Redirect to dashboard                       | ✅ Redirected to dashboard            | Passed |
+| TC-004  | Reject invalid login           | Use wrong credentials                   | Show "Invalid credentials" error            | ✅ Invalid login rejected             | Passed |
+| TC-005  | Logout                         | Click logout                            | Redirect to login page                      | ✅ Redirected to login page           | Passed |
+| TC-013  | Password security              | Login or register, inspect LocalStorage | Password should be encrypted/hashed         | ❌ Password stored in plain text      | Failed |
 
 ---
 
