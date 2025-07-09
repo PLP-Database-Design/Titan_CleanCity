@@ -12,7 +12,7 @@
 | TC-003  | Login with correct credentials | Fill email & password on /login         | Redirect to dashboard                       | ✅ Redirected to dashboard            | Passed |
 | TC-004  | Reject invalid login           | Use wrong credentials                   | Show "Invalid credentials" error            | ✅ Invalid login rejected             | Passed |
 | TC-005  | Logout                         | Click logout                            | Redirect to login page                      | ✅ Redirected to login page           | Passed |
-| TC-013  | Password security              | Login or register, inspect LocalStorage | Password should be encrypted/hashed         | ❌ Password stored in plain text      | Failed |
+| TC-006  | Password security              | Login or register, inspect LocalStorage | Password should be encrypted/hashed         | ❌ Password stored in plain text      | Failed |
 
 ---
 
@@ -20,11 +20,11 @@
 
 | Test ID | Test Case                 | Steps                                                           | Expected Result                       | Actual Result | Status |
 | ------- | ------------------------- | --------------------------------------------------------------- | ------------------------------------- | ------------- | ------ |
-| TC-006  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | Success message shown              | Passed       |
-| TC-007  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields | Validation errors              | Passed       |
-| TC-008  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | Invalid error              | Passed       |
-| TC-009  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | Date accepted              | Passed       |
-| TC-010  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  Value accepted             | Passed       |
+| TC-007  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | Success message shown              | Passed       |
+| TC-008  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields | Validation errors              | Passed       |
+| TC-009  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | Invalid error              | Passed       |
+| TC-010  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | Date accepted              | Passed       |
+| TC-011  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  Value accepted             | Passed       |
 
 ---
 
@@ -32,11 +32,11 @@
 
 | Test ID | Test Case                   | Steps                                       | Expected Result                   | Actual Result                       | Status |
 | ------- | --------------------------- | ------------------------------------------- | --------------------------------- | ----------------------------------- | ------ |
-| TC-011  | View dashboard data         | Login and visit /dashboard                  | Statistics and pickups shown      | ✅ Statistics and pickups shown      | Passed |
-| TC-012  | Leaderboard loads           | Check leaderboard section                   | Leaderboard visible               | ❌ Leaderboard not visible           | Failed |
-| TC-013  | Charts render               | Check canvas/chart element                  | Chart renders with data           | ❌ Chart not visible                 | Failed |
-| TC-007  | Filter Requests by Location | Go to Dashboard, select “Eldoret” in filter | Only Eldoret requests appear      | ❌ Nairobi requests appear           | Failed |
-| TC-008  | Clear All Filters           | Apply filters, click “Clear Filters” button | Filters reset and full list shown | ❌ No Clear Filters button available | Failed |
+| TC-012  | View dashboard data         | Login and visit /dashboard                  | Statistics and pickups shown      | ✅ Statistics and pickups shown      | Passed |
+| TC-013  | Leaderboard loads           | Check leaderboard section                   | Leaderboard visible               | ❌ Leaderboard not visible           | Failed |
+| TC-014  | Charts render               | Check canvas/chart element                  | Chart renders with data           | ❌ Chart not visible                 | Failed |
+| TC-015  | Filter Requests by Location | Go to Dashboard, select “Eldoret” in filter | Only Eldoret requests appear      | ❌ Nairobi requests appear           | Failed |
+| TC-016  | Clear All Filters           | Apply filters, click “Clear Filters” button | Filters reset and full list shown | ❌ No Clear Filters button available | Failed |
 
 ---
 
@@ -44,8 +44,8 @@
 
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
-| TC-014  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible              | Passed       |
-| TC-015  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error             | Passed       |
+| TC-017  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible              | Passed       |
+| TC-018  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error             | Passed       |
 
 ---
 
@@ -53,8 +53,8 @@
 
 | Test ID | Test Case              | Steps                 | Expected Result        | Actual Result | Status |
 | ------- | ---------------------- | --------------------- | ---------------------- | ------------- | ------ |
-| TC-016  | Like a community post  | Click like button     | Likes count increments | Likes count increments              | Passed       |
-| TC-017  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed              | Passed       |
+| TC-019  | Like a community post  | Click like button     | Likes count increments | Likes count increments              | Passed       |
+| TC-020  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed              | Passed       |
 
 ---
 
@@ -62,9 +62,9 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-018  | Update profile name | Change name and save      | Show success message | Success message shown              | Passed        |
-| TC-019  | Submit feedback     | Write and submit feedback | Show success message | Success message shown              | Passed       |
-| TC-020  | Empty feedback form | Submit without typing     | Show error           | Invalid error              | Passed       |
+| TC-021  | Update profile name | Change name and save      | Show success message | Success message shown              | Passed        |
+| TC-022  | Submit feedback     | Write and submit feedback | Show success message | Success message shown              | Passed       |
+| TC-023  | Empty feedback form | Submit without typing     | Show error           | Invalid error              | Passed       |
 
 ---
 
@@ -72,9 +72,9 @@
 
 | Test ID | Test Case                                                 |
 | ------- | --------------------------------------------------------- |
-| TC-021  | Load data with slow network (simulate throttle)           |
-| TC-022  | Form autosave or prevent duplicate submission             |
-| TC-023  | Admin deletes a blog post                                 |
-| TC-024  | Prevent invalid email format in forms                     |
-| TC-025  | Role-based access (non-admin cannot access `/admin/blog`) |
+| TC-024  | Load data with slow network (simulate throttle)           |
+| TC-025  | Form autosave or prevent duplicate submission             |
+| TC-026  | Admin deletes a blog post                                 |
+| TC-027  | Prevent invalid email format in forms                     |
+| TC-028  | Role-based access (non-admin cannot access `/admin/blog`) |
 
