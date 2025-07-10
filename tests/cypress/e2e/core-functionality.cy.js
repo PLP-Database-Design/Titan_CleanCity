@@ -13,7 +13,7 @@ describe('Core Functionality', () => {
   });
 
   it('Validates empty pickup form', () => {
-    cy.visit('/pickup');
+    cy.visit('http://localhost:3000/pickup');
     cy.get('button[type="submit"]').click();
     cy.contains('Please fill all required fields').should('exist');
   });
