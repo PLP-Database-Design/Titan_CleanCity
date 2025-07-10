@@ -1,0 +1,16 @@
+{
+  "testUser": {
+    "name": "Demo User",
+    "email": "user@cleancity.com",
+    "password": "password123"
+  },
+  "pickupData": {
+    "name": "David Smith",
+    "location": "Nairobi",
+    "phone": "0712345678",
+    "email": "david@cleancity.com",
+    "pickupDate": "2025-07-10",
+    "wasteType": "Plastic",
+    "description": "Several plastic bottles and containers"
+  }
+}
