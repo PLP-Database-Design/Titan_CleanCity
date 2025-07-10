@@ -1,5 +1,5 @@
 Cypress.Commands.add('registerUser', ({ name, email, password }) => {
-  cy.visit('https://686b95c4f8c3190008f5a8f0--cleancity-waste-management.netlify.app/signup');
+  cy.visit('http://localhost:3000/signup');
   cy.get('input[name="name"]').type(name);
   cy.get('input[name="email"]').type(email);
   cy.get('input[name="password"]').type(password);
@@ -7,14 +7,14 @@ Cypress.Commands.add('registerUser', ({ name, email, password }) => {
 });
 
 Cypress.Commands.add('loginUser', ({ email, password }) => {
-  cy.visit('https://686b95c4f8c3190008f5a8f0--cleancity-waste-management.netlify.app/login');
+  cy.visit('http://localhost:3000/login');
   cy.get('input[name="email"]').type(email);
   cy.get('input[name="password"]').type(password);
   cy.get('button[type="submit"]').click();
 });
 
 Cypress.Commands.add('schedulePickup', ({ name, location, phone, email, pickupDate, wasteType, description }) => {
-  cy.visit('https://686b95c4f8c3190008f5a8f0--cleancity-waste-management.netlify.app/pickup');
+  cy.visit('http://localhost:3000/pickup');
   cy.get('input[name="name"]').type(name);
   cy.get('input[name="location"]').type(location);
   cy.get('input[name="phone"]').type(phone);
@@ -26,7 +26,7 @@ Cypress.Commands.add('schedulePickup', ({ name, location, phone, email, pickupDa
 });
 
 Cypress.Commands.add('submitFeedback', (message) => {
-  cy.visit('https://686b95c4f8c3190008f5a8f0--cleancity-waste-management.netlify.app/feedback');
+  cy.visit('http://localhost:3000/feedback');
   cy.get('textarea[name="message"]').type(message);
   cy.get('button[type="submit"]').click();
 });
