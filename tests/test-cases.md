@@ -5,8 +5,6 @@
 
 | Test ID | Test Case                      | Steps                                 | Expected Result                             | Actual Result | Status |
 | ------- | ------------------------------ | ------------------------------------- | ------------------------------------------- | ------------- | ------ |
-| Test ID | Test Case                      | Steps                                   | Expected Result                             | Actual Result                        | Status |
-| ------- | ------------------------------ | --------------------------------------- | ------------------------------------------- | ------------------------------------ | ------ |
 | TC-001  | Register a new user            | Fill name, email, password on /signup   | Redirect to dashboard, show welcome message | ❌ Not redirected to dashboard        | Failed |
 | TC-002  | Prevent duplicate registration | Register with same email                | Show "Email already exists" error           | ✅ "Email already exists" error shown | Passed |
 | TC-003  | Login with correct credentials | Fill email & password on /login         | Redirect to dashboard                       | ✅ Redirected to dashboard            | Passed |
@@ -20,11 +18,11 @@
 
 | Test ID | Test Case                 | Steps                                                           | Expected Result                       | Actual Result | Status |
 | ------- | ------------------------- | --------------------------------------------------------------- | ------------------------------------- | ------------- | ------ |
-| TC-007  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | Success message shown              | Passed       |
-| TC-008  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields | Validation errors              | Passed       |
-| TC-009  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | Invalid error              | Passed       |
-| TC-010  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | Date accepted              | Passed       |
-| TC-011  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  Value accepted             | Passed       |
+| TC-007  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | Success message shown  | Passed |
+| TC-008  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields | Validation errors      | Passed |
+| TC-009  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | Invalid error          | Passed |
+| TC-010  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | Date accepted          | Passed |
+| TC-011  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  Value accepted        | Passed |
 
 ---
 
@@ -44,8 +42,8 @@
 
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
-| TC-017  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible              | Passed       |
-| TC-018  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error             | Passed       |
+| TC-017  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible | Passed |
+| TC-018  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error                    | Passed |
 
 ---
 
@@ -53,8 +51,8 @@
 
 | Test ID | Test Case              | Steps                 | Expected Result        | Actual Result | Status |
 | ------- | ---------------------- | --------------------- | ---------------------- | ------------- | ------ |
-| TC-019  | Like a community post  | Click like button     | Likes count increments | Likes count increments              | Passed       |
-| TC-020  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed              | Passed       |
+| TC-019  | Like a community post  | Click like button     | Likes count increments | Likes count increments | Passed |
+| TC-020  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed         | Passed |
 
 ---
 
@@ -62,9 +60,24 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-021  | Update profile name | Change name and save      | Show success message | Success message shown              | Passed        |
-| TC-022  | Submit feedback     | Write and submit feedback | Show success message | Success message shown              | Passed       |
-| TC-023  | Empty feedback form | Submit without typing     | Show error           | Invalid error              | Passed       |
+| TC-021  | Update profile name | Change name and save      | Show success message | Success message shown  | Passed |
+| TC-022  | Submit feedback     | Write and submit feedback | Show success message | Success message shown  | Passed |
+| TC-023  | Empty feedback form | Submit without typing     | Show error           | Invalid error          | Passed |
+
+---
+
+### 7. Accessibility & Performance 
+
+| Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
+| ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
+| TC-024  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts | No alt text | Failed |
+| TC-025  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | Navigation is not consistent | Failed |
+| TC-026  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | The website works well with the high contrast theme | Passed |
+| TC-027  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
+| TC-028  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
+| TC-029  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
+| TC-030  | Use lighthouse for  overall website accessibility percentage | Open lighthouse on your browser | Website has a good accessiblity percentage | Website has good accessibility (100%) | Passed |
+| TC-031  | Use lighthouse for overall website performance percentage | Open lighthouse on your browser | Website has good performance percentage | Website has average performance percentage (70%) | Failed |
 
 ---
 
@@ -72,9 +85,9 @@
 
 | Test ID | Test Case                                                 |
 | ------- | --------------------------------------------------------- |
-| TC-024  | Load data with slow network (simulate throttle)           |
-| TC-025  | Form autosave or prevent duplicate submission             |
-| TC-026  | Admin deletes a blog post                                 |
-| TC-027  | Prevent invalid email format in forms                     |
-| TC-028  | Role-based access (non-admin cannot access `/admin/blog`) |
+| TC-032  | Load data with slow network (simulate throttle)           |
+| TC-033  | Form autosave or prevent duplicate submission             |
+| TC-034  | Admin deletes a blog post                                 |
+| TC-035  | Prevent invalid email format in forms                     |
+| TC-036  | Role-based access (non-admin cannot access `/admin/blog`) |
 
