@@ -76,8 +76,8 @@
 | TC-027  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
 | TC-028  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
 | TC-029  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
-| TC-030  | Use lighthouse for  overall website accessibility percentage | Open lighthouse on your browser | Website has a good accessiblity percentage | Website has good accessibility (100%) | Passed |
-| TC-031  | Use lighthouse for overall website performance percentage | Open lighthouse on your browser | Website has good performance percentage | Website has average performance percentage (70%) | Failed |
+| TC-030  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | Website has good accessibility score (100) | Passed |
+| TC-031  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | Website has a slightly above average performance score (70) | Passed |
 
 ---
 
