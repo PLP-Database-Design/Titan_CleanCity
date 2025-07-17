@@ -44,7 +44,7 @@
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
 | TC-018  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible | Passed |
-| TC-019  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error                    | Passed |
+| TC-019  | Prevent empty post | Submit with blank content         | ❌ Show validation error            | Invalid error                    | Passed |
 
 ---
 
@@ -71,14 +71,14 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-025  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts | No alt text | Failed |
-| TC-026  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | Navigation is not consistent | Failed |
+| TC-025  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts |❌ No alt text | Failed |
+| TC-026  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | ❌Navigation is not consistent | Failed |
 | TC-027  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | The website works well with the high contrast theme | Passed |
 | TC-028  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
 | TC-029  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
 | TC-030  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
 | TC-031  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | Website has good accessibility score (100) | Passed |
-| TC-032  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | Website has a slightly above average performance score (70) | Failed |
+| TC-032  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | ❌ Website has a slightly above average performance score (70) | Failed |
 
 ---
 
