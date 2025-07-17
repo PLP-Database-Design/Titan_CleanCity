@@ -28,13 +28,14 @@
 
 ### 3. Dashboard & Analytics
 
-| Test ID | Test Case                   | Steps                                       | Expected Result                   | Actual Result                       | Status |
-| ------- | --------------------------- | ------------------------------------------- | --------------------------------- | ----------------------------------- | ------ |
-| TC-012  | View dashboard data         | Login and visit /dashboard                  | Statistics and pickups shown      | ✅ Statistics and pickups shown      | Passed |
-| TC-013  | Leaderboard loads           | Check leaderboard section                   | Leaderboard visible               | ❌ Leaderboard not visible           | Failed |
-| TC-014  | Charts render               | Check canvas/chart element                  | Chart renders with data           | ❌ Chart not visible                 | Failed |
-| TC-015  | Filter Requests by Location | Go to Dashboard, select “Eldoret” in filter | Only Eldoret requests appear      | ❌ Nairobi requests appear           | Failed |
-| TC-016  | Clear All Filters           | Apply filters, click “Clear Filters” button | Filters reset and full list shown | ❌ No Clear Filters button available | Failed |
+| Test ID | Test Case                   | Steps                                              | Expected Result                              | Actual Result               | Status |
+| ------- | --------------------------- | -------------------------------------------------- | -------------------------------------------- | --------------------------- | ------ |
+| TC-012  | View dashboard data         | Login and go to `/dashboard`                       | Statistics and pickups shown                 | ✅ Statistics shown          | Passed |
+| TC-013  | Leaderboard loads           | Check leaderboard section                          | Leaderboard visible                          | ❌ Leaderboard not visible   | Failed |
+| TC-014  | Charts render               | Check canvas/chart element                         | Chart renders with data                      | ❌ Chart not visible         | Failed |
+| TC-015  | Filter Requests by Location | Select "Eldoret" in location filter                | Only Eldoret requests appear                 | ❌ Nairobi requests appear   | Failed |
+| TC-016  | Clear All Filters           | Click "Clear Filters" after applying filters       | Filters reset and full list shown            | ❌ No clear button available | Failed |
+| TC-017  | Sidebar responsiveness      | Resize screen (mobile/tablet), scroll with sidebar | Sidebar collapses or doesn’t overlap content | ❌ Sidebar overlaps content  | Failed |
 
 ---
 
