@@ -44,7 +44,7 @@
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
 | TC-018  | Post blog article  | Fill title and content and submit | Success message and post visible | ✅ Success message and post visible | Passed |
-| TC-019  | Prevent empty post | Submit with blank content         | Show validation error            | ❌ Invalid error                    | Passed |
+| TC-019  | Prevent empty post | Submit with blank content         | Show validation error            | ✅ Invalid error                    | Passed |
 
 ---
 
