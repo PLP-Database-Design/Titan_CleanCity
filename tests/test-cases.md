@@ -18,11 +18,11 @@
 
 | Test ID | Test Case                 | Steps                                                           | Expected Result                       | Actual Result | Status |
 | ------- | ------------------------- | --------------------------------------------------------------- | ------------------------------------- | ------------- | ------ |
-| TC-007  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | Success message shown  | Passed |
-| TC-008  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields | Validation errors      | Passed |
-| TC-009  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | Invalid error          | Passed |
-| TC-010  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | Date accepted          | Passed |
-| TC-011  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  Value accepted        | Passed |
+| TC-007  | Successful pickup request | Fill all fields: name, location, phone, email, date, type, desc | Show success message                  | ✅ Success message shown  | Passed |
+| TC-008  | Validation on empty form  | Submit form without inputs                                      | Show validation errors for all fields |✅ Validation errors      | Passed |
+| TC-009  | Invalid phone format      | Enter wrong phone number                                        | Show error for phone field            | ✅ Invalid error          | Passed |
+| TC-010  | Calendar date selection   | Select from date picker                                         | Date accepted and shown               | ✅ Date accepted          | Passed |
+| TC-011  | Select valid waste type   | Choose from dropdown                                            | Value accepted                        |  ✅ Value accepted        | Passed |
 
 ---
 
@@ -43,7 +43,7 @@
 
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
-| TC-018  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible | Passed |
+| TC-018  | Post blog article  | Fill title and content and submit | ✅ Success message and post visible | Success message and post visible | Passed |
 | TC-019  | Prevent empty post | Submit with blank content         | ❌ Show validation error            | Invalid error                    | Passed |
 
 ---
@@ -52,8 +52,8 @@
 
 | Test ID | Test Case              | Steps                 | Expected Result        | Actual Result | Status |
 | ------- | ---------------------- | --------------------- | ---------------------- | ------------- | ------ |
-| TC-020  | Like a community post  | Click like button     | Likes count increments | Likes count increments | Passed |
-| TC-021  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed         | Passed |
+| TC-020  | Like a community post  | Click like button     | Likes count increments | ✅ Likes count increments | Passed |
+| TC-021  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | ✅ 1 like allowed         | Passed |
 
 ---
 
@@ -61,9 +61,9 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-022  | Update profile name | Change name and save      | Show success message | Success message shown  | Passed |
-| TC-023  | Submit feedback     | Write and submit feedback | Show success message | Success message shown  | Passed |
-| TC-024  | Empty feedback form | Submit without typing     | Show error           | Invalid error          | Passed |
+| TC-022  | Update profile name | Change name and save      | Show success message | ✅ Success message shown  | Passed |
+| TC-023  | Submit feedback     | Write and submit feedback | Show success message | ✅ Success message shown  | Passed |
+| TC-024  | Empty feedback form | Submit without typing     | Show error           | ✅ Invalid error          | Passed |
 
 ---
 
@@ -73,11 +73,11 @@
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
 | TC-025  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts |❌ No alt text | Failed |
 | TC-026  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | ❌Navigation is not consistent | Failed |
-| TC-027  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | The website works well with the high contrast theme | Passed |
-| TC-028  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
-| TC-029  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
-| TC-030  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
-| TC-031  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | Website has good accessibility score (100) | Passed |
+| TC-027  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | ✅ The website works well with the high contrast theme | Passed |
+| TC-028  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | ✅ Website still works | Passed |
+| TC-029  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | ✅ Website is working well | Passed |
+| TC-030  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | ✅ Website has good compatibility | Passed |
+| TC-031  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | ✅ Website has good accessibility score (100) | Passed |
 | TC-032  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | ❌ Website has a slightly above average performance score (70) | Failed |
 
 ---
