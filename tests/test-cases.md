@@ -43,8 +43,8 @@
 
 | Test ID | Test Case          | Steps                             | Expected Result                  | Actual Result | Status |
 | ------- | ------------------ | --------------------------------- | -------------------------------- | ------------- | ------ |
-| TC-017  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible | Passed |
-| TC-018  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error                    | Passed |
+| TC-018  | Post blog article  | Fill title and content and submit | Success message and post visible | Success message and post visible | Passed |
+| TC-019  | Prevent empty post | Submit with blank content         | Show validation error            | Invalid error                    | Passed |
 
 ---
 
@@ -52,8 +52,8 @@
 
 | Test ID | Test Case              | Steps                 | Expected Result        | Actual Result | Status |
 | ------- | ---------------------- | --------------------- | ---------------------- | ------------- | ------ |
-| TC-019  | Like a community post  | Click like button     | Likes count increments | Likes count increments | Passed |
-| TC-020  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed         | Passed |
+| TC-020  | Like a community post  | Click like button     | Likes count increments | Likes count increments | Passed |
+| TC-021  | Prevent multiple likes | Click like repeatedly | Only 1 like allowed    | 1 like allowed         | Passed |
 
 ---
 
@@ -61,9 +61,9 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-021  | Update profile name | Change name and save      | Show success message | Success message shown  | Passed |
-| TC-022  | Submit feedback     | Write and submit feedback | Show success message | Success message shown  | Passed |
-| TC-023  | Empty feedback form | Submit without typing     | Show error           | Invalid error          | Passed |
+| TC-022  | Update profile name | Change name and save      | Show success message | Success message shown  | Passed |
+| TC-023  | Submit feedback     | Write and submit feedback | Show success message | Success message shown  | Passed |
+| TC-024  | Empty feedback form | Submit without typing     | Show error           | Invalid error          | Passed |
 
 ---
 
@@ -71,14 +71,14 @@
 
 | Test ID | Test Case           | Steps                     | Expected Result      | Actual Result | Status |
 | ------- | ------------------- | ------------------------- | -------------------- | ------------- | ------ |
-| TC-024  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts | No alt text | Failed |
-| TC-025  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | Navigation is not consistent | Failed |
-| TC-026  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | The website works well with the high contrast theme | Passed |
-| TC-027  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
-| TC-028  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
-| TC-029  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
-| TC-030  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | Website has good accessibility score (100) | Passed |
-| TC-031  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | Website has a slightly above average performance score (70) | Failed |
+| TC-025  | All images have appropriate alternative text descriptions | Disable images in browser | Images are replaced with alt texts | No alt text | Failed |
+| TC-026  | Keyboard navigation is consistent and predictable | Navigate the website using the "Tab" key | Navigation is consistent throughout the website | Navigation is not consistent | Failed |
+| TC-027  | Test the website's usability with high contrast settings enabled | Go to your PC's settings and click "high contrast mode" | The website works well with the high contrast theme | The website works well with the high contrast theme | Passed |
+| TC-028  | Check that the website is compatible with different browsers | Open the website using different browsers | Website still works | Website still works | Passed |
+| TC-029  | Test the website's zoom functionality to ensure it maintains usability and readability at various zoom levels | Change zoom levels on your browser | The website is still working well irregardless of the font size and zoom levels | Website is working well | Passed |
+| TC-030  | Test the website with NVDA to ensure compatibility | Enable NDVA on your device | Website has good compatibility | Website has good compatibility | Passed |
+| TC-031  | Use lighthouse for  overall website accessibility score | Open lighthouse on your browser | Website has a good accessiblity score | Website has good accessibility score (100) | Passed |
+| TC-032  | Use lighthouse for overall website performance score | Open lighthouse on your browser | Website has good performance score | Website has a slightly above average performance score (70) | Failed |
 
 ---
 
@@ -86,9 +86,9 @@
 
 | Test ID | Test Case                                                 |
 | ------- | --------------------------------------------------------- |
-| TC-032  | Load data with slow network (simulate throttle)           |
-| TC-033  | Form autosave or prevent duplicate submission             |
-| TC-034  | Admin deletes a blog post                                 |
-| TC-035  | Prevent invalid email format in forms                     |
-| TC-036  | Role-based access (non-admin cannot access `/admin/blog`) |
+| TC-033  | Load data with slow network (simulate throttle)           |
+| TC-034  | Form autosave or prevent duplicate submission             |
+| TC-035  | Admin deletes a blog post                                 |
+| TC-036  | Prevent invalid email format in forms                     |
+| TC-037  | Role-based access (non-admin cannot access `/admin/blog`) |
 
